@@ -17,7 +17,6 @@ const UserProfile = ({ match }) => {
             setPosts(data);
             data = await getUserbyID(match.params.id);
             setUser(data);
-            console.log(data);
             data = await getUser(account.email);
             setFollow(data[0].following.includes(match.params.id));
         }
