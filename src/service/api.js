@@ -4,7 +4,7 @@ const url = 'https://blog-app-back-end.herokuapp.com';
 // const url = 'http://localhost:8000';
 
 export const uploadFile = async (post) => {
-    console.log(post);
+    // console.log(post);
     try {
         return await axios.post(`https://api.cloudinary.com/v1_1/de9j6ufii/image/upload `, post);
     } catch (error) {
